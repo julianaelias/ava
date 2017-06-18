@@ -1,0 +1,41 @@
+* {
+padding: 0px;
+margin: 0px;
+}
+
+html, body {
+height: 100%;
+}
+
+#tudo {
+min-height: 100%;
+position: relative;
+}
+
+.footer {
+position: absolute;
+width: 100%;
+bottom: 0;;
+padding:5px;
+text-align:center;
+background-color: #337ab7;
+border-color: #2f6a9d;
+color: #ffffff;
+}
+
+/*
+html, body {
+	height: 100%;
+}
+
+#tudo {
+	min-height: 100%;
+}
+
+* html #tudo {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+}
+
+#conteudo {
+	padding-bottom: 30px;
+	}*/

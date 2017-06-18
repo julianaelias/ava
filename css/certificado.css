@@ -1,0 +1,40 @@
+.tabela{
+	border: 1px solid;
+	border-color:#337AB7;
+	padding: 10px 15px; 
+	border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
+	width:95%; 
+	text-align:center;
+	margin: auto;
+	
+}
+
+.trCertificado{
+	color:#337AB7; 
+	font-size:76px; 
+	font-weight:bold; 
+	padding: 20px 0px 20px  0px;
+	height:100px;
+	
+}
+
+.trNormal{
+	color:#000000; 
+	font-size:36px; 
+	padding: 10px 15px;
+	text-align:justify !important;
+	height:395px;
+	
+}
+
+.trData{
+	color:#000000; 
+	font-size:36px; 
+	padding: 20px 0px 20px  0px;
+	height:100px;
+	
+}
+
+
+
