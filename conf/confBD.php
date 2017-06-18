@@ -1,11 +1,11 @@
 <?php
 	function conn_mysql(){
 
-		$servidor = 'mysql.hostinger.com.br';
+		$servidor = 'localhost';
 		$porta = 3306;
-		$banco = "u576607581_ava";
-		$usuario = "u576607581_ava";
-		$senha = "18041990";
+		$banco = "ava";
+		$usuario = "root";
+		$senha = "";
 	   
 		$conn = new PDO("mysql:host=$servidor;
 					   port=$porta;
