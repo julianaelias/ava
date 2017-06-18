@@ -9,15 +9,15 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="../assets/ico/favicon.ico">
         <!-- Bootstrap -->
-        <link href="/ava/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font-awesome -->
-        <link rel="stylesheet" href="/ava/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
         <!-- Cabecalho -->
-        <link rel="stylesheet" type="text/css" href="/ava/css/cabecalho.css">
+        <link rel="stylesheet" type="text/css" href="../css/cabecalho.css">
         <!-- Rodape -->
-        <link rel="stylesheet" type="text/css" href="/ava/css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="../css/rodape.css">
         <!-- Geral -->
-        <link rel="stylesheet" type="text/css" href="/ava/css/geral.css">
+        <link rel="stylesheet" type="text/css" href="../css/geral.css">
  
         <title>AVA</title>  
         
@@ -27,7 +27,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
             	<div class="navbar-header">
-              		<a class="navbar-brand" href="/ava/index.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a>
+              		<a class="navbar-brand" href="../index.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a>
             	</div>
                 <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">

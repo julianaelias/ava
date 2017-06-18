@@ -7,7 +7,7 @@ include_once("../../includes/cabecalho_admin.php");
 	<div class="container">
     	<ol class="breadcrumb fundo">
         	<h1 class="tituloBreadcrumb">Gerir Usuários</h1>
-             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+             <li><a  href="../admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
              <li class="active">Usuários</li>
 		</ol>
 	</div>
@@ -78,7 +78,7 @@ include_once("../../includes/cabecalho_admin.php");
                 <div class="row espaco" style="text-align:right !important;">         	
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     	<button type="submit" class="btn btn-sm btn-primary">PESQUISAR</button>&nbsp;&nbsp;&nbsp;
-                    	<a class="btn btn-sm btn-success" href="/ava/admin/usuarios/cadastrar_usuarios.php" role="button">ADICIONAR</a>
+                    	<a class="btn btn-sm btn-success" href="../admin/usuarios/cadastrar_usuarios.php" role="button">ADICIONAR</a>
 	   				</div>
                 </div>
   			</div>
@@ -203,7 +203,7 @@ include_once("../../includes/cabecalho_admin.php");
                                 </td>
                                 <td>
                                 	<a class="btn btn-sm btn-primary" title="Alterar Usuario" 
-                                    href="/ava/admin/usuarios/cadastrar_usuarios.php?usuario=<?=$valor['USUARIO'];?>" role="button">
+                                    href="../admin/usuarios/cadastrar_usuarios.php?usuario=<?=$valor['USUARIO'];?>" role="button">
                                     	<i class="fa fa-pencil" aria-hidden="true"></i>
                                 	</a>
                                 </td>

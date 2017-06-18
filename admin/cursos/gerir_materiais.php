@@ -103,7 +103,7 @@ if(!empty($curso) && !empty($unidade) && !empty($material)){
   			<div class="panel-heading">Cadastrar / Alterar Materiais</div>
   			<div class="panel-body">
             <form id="formMateriais" name="formMateriais" enctype="multipart/form-data" method="post" 
-                action="/ava/admin/cursos/salvar_materiais.php" target="anexo" style="margin: 0px; padding: 0px;">
+                action="../admin/cursos/salvar_materiais.php" target="anexo" style="margin: 0px; padding: 0px;">
             	<div class="row espaco">
                 	<div class="col-xs-12 col-sm-12 col-md-12">
                     	<div class="input-group">

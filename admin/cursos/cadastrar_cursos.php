@@ -75,8 +75,8 @@ if(!empty($curso)){
 	<div class="container">
         <ol class="breadcrumb fundo" >
             <h1 class="tituloBreadcrumb">Cadastrar Cursos</h1>
-             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-              <li><a  href="/ava/admin/cursos/cursos.php">Cursos</a></li>
+             <li><a  href="../admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+              <li><a  href="../admin/cursos/cursos.php">Cursos</a></li>
              <li class="active">Cadastrar Cursos</li>
         </ol>
     </div>

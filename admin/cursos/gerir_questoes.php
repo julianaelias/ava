@@ -107,7 +107,7 @@ if(!empty($cursoQ) && !empty($unidadeQ) && !empty($atividadeQ) && !empty($questa
   			<div class="panel-heading">Cadastrar / Alterar Questão</div>
   			<div class="panel-body">
             <form id="formQuestoes_<?=$atividadeQ;?>" name="formQuestoes_<?=$atividadeQ;?>" enctype="multipart/form-data" method="post" 
-                action="/ava/admin/cursos/salvar_questoes.php"  style="margin: 0px; padding: 0px;">                
+                action="../admin/cursos/salvar_questoes.php"  style="margin: 0px; padding: 0px;">                
                 <div class="row espaco">
                     <div class="col-xs-12 col-sm-12 col-md-12" style="font-weight:bold;">QUESTÃO <?=$questaoQ;?></div>
                 </div>            	

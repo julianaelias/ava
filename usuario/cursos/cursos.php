@@ -8,7 +8,7 @@ include_once("../../includes/cabecalho_aluno.php");
 	<div class="container">
     	<ol class="breadcrumb fundo">
         	<h1 class="tituloBreadcrumb">Cursos</h1>
-             <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+             <li><a  href="../usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
              <li class="active">Cursos</li>
 		</ol>
 	</div>
@@ -164,19 +164,19 @@ include_once("../../includes/cabecalho_aluno.php");
                                      <div class="row espaco" style="text-align:center;">
                                         <div class="col-xs-4 col-sm-4 col-md-4">
 											<a class="btn btn-sm btn-primary" 
-                                    		href="/ava/usuario/cursos/avaliar.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
+                                    		href="../usuario/cursos/avaliar.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
                                             role="button" title="Avaliar Curso">
                                             &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star" aria-hidden="true"></span>&nbsp;AVALIAR CURSO&nbsp;&nbsp;&nbsp;</a>
 	   									</div>
                                         <div class="col-xs-4 col-sm-4 col-md-4">
 											<a class="btn btn-sm btn-primary" target="_blank"
-                                    		href="/ava/usuario/cursos/certificado.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
+                                    		href="../usuario/cursos/certificado.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
                                             role="button" title="Emitir Certificado">
                                             <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;EMITIR CERTIFICADO</a>
 	   									</div>
                                         <div class="col-xs-4 col-sm-4 col-md-4">
 											<a class="btn btn-sm btn-success" 
-                                    		href="/ava/usuario/cursos/conteudo.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
+                                    		href="../usuario/cursos/conteudo.php?inscricao=<?=$valor['INSCRICAO'];?>&curso=<?=$valor['CURSO'];?>" 
                                             role="button" title="Acessar Conteúdo">
                                             <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;ACESSAR CONTEÚDO</a>
 	   									</div>
@@ -214,9 +214,9 @@ include_once("../../includes/cabecalho_aluno.php");
                     
                      <?php
                         if ($PAGINA > 0) {?>
-                            <li><a href="/ava/usuario/cursos/cursos.php?pagina=0">
+                            <li><a href="../usuario/cursos/cursos.php?pagina=0">
                             <div class="fa fa-step-backward"></div></a></li>
-                            <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
+                            <li><a href="../usuario/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
                             <div class="fa fa-backward"></div></a></li>
                       <?php } 
                         //verifica qtde de paginas
@@ -238,7 +238,7 @@ include_once("../../includes/cabecalho_aluno.php");
                             for ($ix = $QTANTE; $ix <= $QTPROX; $ix++) {
                                 $pagina = $ix - 1;
                                 ?><li class="<?= ($ix == $PAGINA + 1) ? 'active' : ''; ?>">
-                                <a href="/ava/usuario/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
+                                <a href="../usuario/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
                             }
                         }else {
                             echo '<li>';
@@ -248,9 +248,9 @@ include_once("../../includes/cabecalho_aluno.php");
                             $ultima = $ULTIMA_MSG;
                             if ($QT > $Fim) {
                             ?>
-                                <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
+                                <li><a href="../usuario/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
                                 <div class="fa fa-forward"></div></a></li>
-                                <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
+                                <li><a href="../usuario/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
                                 <div class="fa fa-step-forward"></div></a></li>
                             <?php
                             }
