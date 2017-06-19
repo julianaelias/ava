@@ -89,7 +89,7 @@ if(!empty($curso) && !empty($unidade) && !empty($atividade)){
   			<div class="panel-heading">Cadastrar / Alterar Atividades</div>
   			<div class="panel-body">
             <form id="formAtividades" name="formAtividades" enctype="multipart/form-data" method="post" 
-                action="../admin/cursos/salvar_atividades.php"  style="margin: 0px; padding: 0px;">
+                action="/ava/admin/cursos/salvar_atividades.php"  style="margin: 0px; padding: 0px;">
             	<div class="row espaco">
                 	<div class="col-xs-12 col-sm-12 col-md-12">
                     	<div class="input-group">

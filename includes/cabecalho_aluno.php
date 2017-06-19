@@ -9,15 +9,15 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="../assets/ico/favicon.ico">
         <!-- Bootstrap -->
-        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/ava/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font-awesome -->
-        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/ava/font-awesome/css/font-awesome.min.css">
         <!-- Cabecalho -->
-        <link rel="stylesheet" type="text/css" href="../css/cabecalho.css">
+        <link rel="stylesheet" type="text/css" href="/ava/css/cabecalho.css">
         <!-- Rodape -->
-        <link rel="stylesheet" type="text/css" href="../css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="/ava/css/rodape.css">
         <!-- Geral -->
-        <link rel="stylesheet" type="text/css" href="../css/geral.css">
+        <link rel="stylesheet" type="text/css" href="/ava/css/geral.css">
  
         <title>AVA - ALUNO</title>  
         
@@ -27,18 +27,18 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
             	<div class="navbar-header">
-              		<a class="navbar-brand" href="../usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA - ALUNO</a>
+              		<a class="navbar-brand" href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA - ALUNO</a>
             	</div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-                        <li><a href="../usuario/inscrever/inscrever.php"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;INSCREVER</a></li>
+                        <li><a href="/ava/usuario/inscrever/inscrever.php"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;INSCREVER</a></li>
                         <li>
-                        	<a href="../usuario/cursos/cursos.php"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;CURSOS</a>
+                        	<a href="/ava/usuario/cursos/cursos.php"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;CURSOS</a>
                         </li>
                   	</ul>
                     
                     <ul class="nav navbar-nav navbar-right">
-                    	<li><a href="../acesso_restrito/sair.php"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;SAIR</a></li>
+                    	<li><a href="/ava/acesso_restrito/sair.php"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;SAIR</a></li>
                   	</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

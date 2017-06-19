@@ -71,8 +71,8 @@ if(!empty($usuario)){
 	<div class="container">
         <ol class="breadcrumb fundo" >
             <h1 class="tituloBreadcrumb">Cadastrar Usuários</h1>
-             <li><a  href="../admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-              <li><a  href="../admin/usuarios/usuarios.php">Usuários</a></li>
+             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+              <li><a  href="/ava/admin/usuarios/usuarios.php">Usuários</a></li>
              <li class="active">Cadastrar Usuários</li>
         </ol>
     </div>

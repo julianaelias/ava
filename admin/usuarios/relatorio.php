@@ -11,6 +11,7 @@ $aprovado = "CURSANDO / REPROVADO";
 $contador = 0;
 $pontos = 0;
 $acertos = 0;
+$controle = 0;
 
 
 	//DADOS RELATÓRIO
@@ -185,7 +186,6 @@ $acertos = 0;
 					<td class='trSubTitulo' style='width:15%;'><strong>Nota</strong></td>
 				</tr>";
 	
-	
 	//QTD QUESTÕES DO CURSO
 	try{
 		// instancia objeto PDO, conectando no mysql
@@ -324,14 +324,18 @@ $acertos = 0;
 				if (count($resultados)> 0){
 					foreach($resultados as $valor){
 						$questao = $valor['QUESTAO'];
-						$alternativa_correta= utf8_encode($valor['ALTERNATIVA_CORRETA']);
+						$alternativa_correta= $valor['ALTERNATIVA_CORRETA'];
 						$atividade = $valor['ATIVIDADE'];
 						$unidade = $valor['UNIDADE'];
 						$curso = $valor['CURSO'];
-						$descricao_atividade = $valor['DESC_ATIVIDADE'];
-						$descricao_unidade = $valor['DESC_UNIDADE'];
+						$descricao_atividade = utf8_encode($valor['DESC_ATIVIDADE']);
+						$descricao_unidade = utf8_encode($valor['DESC_UNIDADE']);
 						
 						$contador++;
+						
+						$controle++;
+						
+
 						if($contador != 1 && $atividade != $atividade_aluno){
 							$html.= "
 									
@@ -342,12 +346,20 @@ $acertos = 0;
 										<td class='Normal'>".$acertos."</td>
 									</tr>";
 									
-									
 									$pontos = 0;
 									$acertos = 0;
+									
+						}else if($contador == 1){
+								$pontosC = $pontos;
+								$acertosC = $acertos;
+								$descricao_atividadeC = $descricao_atividade;
+								$descricao_unidadeC = $descricao_unidade;
+							
 						}
 						
 						
+						
+							
 						//QUESTÃO RESPONDIDA PELO ALUNO
 						try{
 							// instancia objeto PDO, conectando no mysql
@@ -408,7 +420,7 @@ $acertos = 0;
 								}	
 							}
 							
-						
+							
 						} //try
 						catch (PDOException $e)
 						{
@@ -436,7 +448,20 @@ $acertos = 0;
 						}
 						
 						
-					}	
+					}
+					
+					if($controle == 1){
+						$html.= "
+								
+								<tr>
+									<td class='Normal' colspan='2'>".$descricao_unidadeC."</td>
+									<td class='Normal'>".$descricao_atividadeC."</td>
+									<td class='Normal'>".$pontosC."</td>
+									<td class='Normal'>".$acertosC."</td>
+								</tr>";
+					}
+						
+							
 				}else{		
 					$html.= "
 						
@@ -485,7 +510,7 @@ $acertos = 0;
 					</tr>
 				</table>";
 				
-				
+			
 			
 	
 	 

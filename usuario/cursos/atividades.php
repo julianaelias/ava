@@ -85,7 +85,7 @@ if(isset($_POST['inscricao'])){
                         <i class="fa fa-check-square-o" aria-hidden="true"></i> RESPONDER
                         </button>-->
                         <a class="btn btn-sm btn-success" title="Responder" 
-                        href="../usuario/cursos/responder.php?curso=<?=$cursoA;?>&unidade=<?=$unidadeA;?>&atividade=<?=$atividadeA;?>&inscricao=<?=$inscricaoA;?>" role="button">
+                        href="/ava/usuario/cursos/responder.php?curso=<?=$cursoA;?>&unidade=<?=$unidadeA;?>&atividade=<?=$atividadeA;?>&inscricao=<?=$inscricaoA;?>" role="button">
                             <i class="fa fa-check-square-o" aria-hidden="true"></i> RESPONDER
                         </a>
                     </td>

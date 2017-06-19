@@ -16,5 +16,5 @@ require_once("authSession.php");
 	
 }
 	session_destroy();		// Destruímos a sessão em si
-	header("Location: ../index.php");		//redirecionando para a página principal
+	header("Location: /ava/index.php");		//redirecionando para a página principal
 ?>

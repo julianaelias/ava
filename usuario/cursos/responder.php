@@ -25,9 +25,9 @@ if(isset($_GET['curso'])){
 	<div class="container">
     	<ol class="breadcrumb fundo">
         	<h1 class="tituloBreadcrumb">Atividade Avaliativa</h1>
-             <li><a  href="../usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-            <li><a href="../usuario/cursos/cursos.php">Cursos</a></li>
-            <li><a href="../usuario/cursos/conteudo.php?inscricao=<?=$inscricaoQ;?>&curso=<?=$cursoQ;?>">Acessar Conteúdo</a></li>
+             <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+            <li><a href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
+            <li><a href="/ava/usuario/cursos/conteudo.php?inscricao=<?=$inscricaoQ;?>&curso=<?=$cursoQ;?>">Acessar Conteúdo</a></li>
             <li class="active">Atividade Avaliativa</li>
 		</ol>
         <div class="row">
@@ -41,7 +41,7 @@ if(isset($_GET['curso'])){
   			<div class="panel-body"> 
             <form id="formAtividade_<?=$atividadeQ;?>" name="formAtividade_<?=$atividadeQ;?>" 
             enctype="multipart/form-data" method="post" 
-            action="../usuario/cursos/salvar_questoes.php"  style="margin: 0px; padding: 0px;"> 
+            action="/ava/usuario/cursos/salvar_questoes.php"  style="margin: 0px; padding: 0px;"> 
                                                      
 			 <?php 
 			 

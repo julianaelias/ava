@@ -121,8 +121,8 @@ $curso = $_GET['curso'];
 	<div class="container">
         <ol class="breadcrumb fundo" >
             <h1 class="tituloBreadcrumb">Avaliação do Curso</h1>
-             <li><a  href="../usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-              <li><a  href="../usuario/cursos/cursos.php">Cursos</a></li>
+             <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+              <li><a  href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
              <li class="active">Avaliação do Curso</li>
         </ol>
     </div>

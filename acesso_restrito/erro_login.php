@@ -20,7 +20,7 @@ include_once("../includes/cabecalho.php");
         <div class="row espaco">
   			<div class="col-xs-0 col-sm-2 col-md-3"></div>
             <div class="col-xs-12 col-sm-8 col-md-6">
-                 <a class="btn btn-lg btn-primary btn-block" href="../index.php" role="button">NOVO ACESSO</a>
+                 <a class="btn btn-lg btn-primary btn-block" href="/ava/index.php" role="button">NOVO ACESSO</a>
             </div>
             <div class="col-xs-0 col-sm-2 col-md-3"></div>
 		</div>

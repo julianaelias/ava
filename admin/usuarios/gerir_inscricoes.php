@@ -88,7 +88,7 @@ if(isset($_POST['usuario'])){
                                             
                                             <?php if($situacaoI == 1){?>
                                                     <a class="btn btn-sm btn-primary" title="Emitir Relatório"  target="_blank"
-                                                    href="../admin/usuarios/relatorio.php?inscricao=<?=$inscricaoI;?>&usuario=<?=$usuarioI;?>&curso=<?=$cursoI;?>" role="button">
+                                                    href="/ava/admin/usuarios/relatorio.php?inscricao=<?=$inscricaoI;?>&usuario=<?=$usuarioI;?>&curso=<?=$cursoI;?>" role="button">
                                                     <i class="fa fa-file-text" aria-hidden="true"></i>
                                                     </a>
                                     

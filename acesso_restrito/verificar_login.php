@@ -69,9 +69,9 @@ session_start();
 		   }
 		   
 		   if($valor['tipo'] == 1){
-			    header("Location: ../admin/area_admin.php");			   
+			    header("Location: /ava/admin/area_admin.php");			   
 		   }else if($valor['tipo'] == 2){
-		        header("Location: ../usuario/area_aluno.php");	
+		        header("Location: /ava/usuario/area_aluno.php");	
 		   }
 		  
 		   die();

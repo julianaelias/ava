@@ -7,7 +7,7 @@ include_once("../../includes/cabecalho_admin.php");
 	<div class="container">
     	<ol class="breadcrumb fundo">
         	<h1 class="tituloBreadcrumb">Gerir Cursos</h1>
-             <li><a  href="../admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
              <li class="active">Cursos</li>
 		</ol>
 	</div>
@@ -36,7 +36,7 @@ include_once("../../includes/cabecalho_admin.php");
                 <div class="row espaco" style="text-align:right !important;">         	
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     	<button type="submit" class="btn btn-sm btn-primary">PESQUISAR</button>&nbsp;&nbsp;&nbsp;
-                    	<a class="btn btn-sm btn-success" href="../admin/cursos/cadastrar_cursos.php" role="button">ADICIONAR</a>
+                    	<a class="btn btn-sm btn-success" href="/ava/admin/cursos/cadastrar_cursos.php" role="button">ADICIONAR</a>
 	   				</div>
                 </div>
   			</div>
@@ -222,14 +222,14 @@ include_once("../../includes/cabecalho_admin.php");
                                 </td>
                                 <td>
                                 	<a class="btn btn-sm btn-primary" 
-                                    href="../admin/cursos/gerir_cursos.php?curso=<?=$valor['CURSO'];?>" role="button"
+                                    href="/ava/admin/cursos/gerir_cursos.php?curso=<?=$valor['CURSO'];?>" role="button"
                                    title="Gerir Conteúdo do Curso">
                                     	<span class="glyphicon glyphicon-cog" aria-hidden="true"></span
                                 	></a>
                                 </td>
                                 <td>
                                 	<a class="btn btn-sm btn-primary" title="Alterar Curso" 
-                                    href="../admin/cursos/cadastrar_cursos.php?curso=<?=$valor['CURSO'];?>" role="button">
+                                    href="/ava/admin/cursos/cadastrar_cursos.php?curso=<?=$valor['CURSO'];?>" role="button">
                                     	<i class="fa fa-pencil" aria-hidden="true"></i>
                                 	</a>
                                 </td>
@@ -281,9 +281,9 @@ include_once("../../includes/cabecalho_admin.php");
                     
                      <?php
                         if ($PAGINA > 0) {?>
-                            <li><a href="../admin/cursos/cursos.php?pagina=0">
+                            <li><a href="/ava/admin/cursos/cursos.php?pagina=0">
                             <div class="fa fa-step-backward"></div></a></li>
-                            <li><a href="../admin/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
+                            <li><a href="/ava/admin/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
                             <div class="fa fa-backward"></div></a></li>
                       <?php } 
                         //verifica qtde de paginas
@@ -305,7 +305,7 @@ include_once("../../includes/cabecalho_admin.php");
                             for ($ix = $QTANTE; $ix <= $QTPROX; $ix++) {
                                 $pagina = $ix - 1;
                                 ?><li class="<?= ($ix == $PAGINA + 1) ? 'active' : ''; ?>">
-                                <a href="../admin/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
+                                <a href="/ava/admin/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
                             }
                         }else {
                             echo '<li>';
@@ -315,9 +315,9 @@ include_once("../../includes/cabecalho_admin.php");
                             $ultima = $ULTIMA_MSG;
                             if ($QT > $Fim) {
                             ?>
-                                <li><a href="../admin/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
+                                <li><a href="/ava/admin/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
                                 <div class="fa fa-forward"></div></a></li>
-                                <li><a href="../admin/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
+                                <li><a href="/ava/admin/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
                                 <div class="fa fa-step-forward"></div></a></li>
                             <?php
                             }

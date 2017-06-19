@@ -59,8 +59,8 @@ if(!empty($curso)){
 	<div class="container">
     	<ol class="breadcrumb fundo">
         	<h1 class="tituloBreadcrumb">Acessar Conteúdo</h1>
-             <li><a  href="../usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-            <li><a href="../usuario/cursos/cursos.php">Cursos</a></li>
+             <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
+            <li><a href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
             <li class="active">Acessar Conteúdo</li>
 		</ol>
         <div class="row">
@@ -246,9 +246,9 @@ if(!empty($curso)){
                     
                      <?php
                         if ($PAGINA > 0) {?>
-                            <li><a href="../usuario/cursos/cursos.php?pagina=0">
+                            <li><a href="/ava/usuario/cursos/cursos.php?pagina=0">
                             <div class="fa fa-step-backward"></div></a></li>
-                            <li><a href="../usuario/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
+                            <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $PAGINA - 1; ?>">
                             <div class="fa fa-backward"></div></a></li>
                       <?php } 
                         //verifica qtde de paginas
@@ -270,7 +270,7 @@ if(!empty($curso)){
                             for ($ix = $QTANTE; $ix <= $QTPROX; $ix++) {
                                 $pagina = $ix - 1;
                                 ?><li class="<?= ($ix == $PAGINA + 1) ? 'active' : ''; ?>">
-                                <a href="../usuario/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
+                                <a href="/ava/usuario/cursos/cursos.php?pagina=<?= $pagina; ?>"><?= $ix; ?></a></li><?php
                             }
                         }else {
                             echo '<li>';
@@ -280,9 +280,9 @@ if(!empty($curso)){
                             $ultima = $ULTIMA_MSG;
                             if ($QT > $Fim) {
                             ?>
-                                <li><a href="../usuario/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
+                                <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $PAGINA + 1; ?>">
                                 <div class="fa fa-forward"></div></a></li>
-                                <li><a href="../usuario/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
+                                <li><a href="/ava/usuario/cursos/cursos.php?pagina=<?= $ULTIMA_MSG; ?>">
                                 <div class="fa fa-step-forward"></div></a></li>
                             <?php
                             }
