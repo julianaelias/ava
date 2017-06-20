@@ -68,7 +68,9 @@ if(isset($_GET['curso'])){
 										A.DESCRICAO,
 										A.TITULO,
 										QU.ALTERNATIVA_MARCADA,
-										QU.FINALIZADO
+										QU.FINALIZADO,
+										QU.NOTA_ATIVIDADE,
+										QU.VALOR_ATIVIDADE
                                         FROM QUESTOES Q
                                         JOIN ATIVIDADES A ON A.ATIVIDADE = Q.ATIVIDADE
                                         JOIN UNIDADES U ON U.UNIDADE = A.UNIDADE	
@@ -117,6 +119,8 @@ if(isset($_GET['curso'])){
 								$tituloQ = utf8_encode($valor['TITULO']);	
 								$alternativaMarcadaQ = utf8_encode($valor['ALTERNATIVA_MARCADA']);
 								$finalizadoQ = utf8_encode($valor['FINALIZADO']);
+								$valorAtividadeQ = $valor['VALOR_ATIVIDADE'];
+								$notaAtividadeQ = $valor['NOTA_ATIVIDADE'];
 								
 								
 								 if($contador == 1){?>                
@@ -136,6 +140,7 @@ if(isset($_GET['curso'])){
                                         </div>
                                     </div>
                                 <?php } ?>
+                                
                             
                               <div class="row espaco">
                                     <div class="col-xs-1 col-sm-2 col-md-2"></div>
