@@ -22,14 +22,16 @@ if(isset($_GET['curso'])){
 ?>
 
 <div id="tudo">
-	<div class="container">
-    	<ol class="breadcrumb fundo">
+	<div class="fundoTopo2">
+    	<ol class="breadcrumb">
         	<h1 class="tituloBreadcrumb">Atividade Avaliativa</h1>
              <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-            <li><a href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
-            <li><a href="/ava/usuario/cursos/conteudo.php?inscricao=<?=$inscricaoQ;?>&curso=<?=$cursoQ;?>">Acessar Conteúdo</a></li>
+             <li><a href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
+             <li><a href="/ava/usuario/cursos/conteudo.php?inscricao=<?=$inscricaoQ;?>&curso=<?=$cursoQ;?>">Acessar Conteúdo</a></li>
             <li class="active">Atividade Avaliativa</li>
 		</ol>
+	</div>
+    <div class="container">
         <div class="row">
   			<div class="col-md-12">
             	<h2 class="subTitulo">Atividade Avaliativa - <?=$atividadeQ;?></h2>

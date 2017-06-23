@@ -11,9 +11,13 @@ $data = '';
 $inscricao = '';
 $nota = '';
 
-$inscricao = $_GET['inscricao'];
-$curso = $_GET['curso'];
+if(!empty($_GET['curso'])){
+	$curso = $_GET['curso'];
+}
 
+if(!empty($_GET['inscricao'])){
+	$inscricao = $_GET['inscricao'];
+}
 
 	try{
 		// instancia objeto PDO, conectando no mysql
@@ -118,8 +122,8 @@ $curso = $_GET['curso'];
 	
 ?>
 <div id="tudo">
-	<div class="container">
-        <ol class="breadcrumb fundo" >
+	<div class="fundoTopo2">
+        <ol class="breadcrumb" >
             <h1 class="tituloBreadcrumb">Avaliação do Curso</h1>
              <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
               <li><a  href="/ava/usuario/cursos/cursos.php">Cursos</a></li>

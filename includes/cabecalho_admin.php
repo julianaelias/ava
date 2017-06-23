@@ -24,30 +24,20 @@
 	</head>
   	<body >
     
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top visible-xl visible-lg visible-md visible-sm">
 			<div class="container-fluid">
             	<div class="navbar-header">
-              		<a class="navbar-brand" href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA - ADMINISTRADOR</a>
+              		<a class="navbar-brand" href="/ava/admin/area_admin.php">
+                    <i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA - ADMINISTRADOR</a>
             	</div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
                     	<li>
                         	<a href="/ava/admin/cursos/cursos.php"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;CURSOS</a>
-                        </li>
-                        <!--<li>
-                        	<a href="/ava/admin/inscricoes/inscricoes.php"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;INSCRIÇÕES</a>
-                        </li> -->                 
+                        </li>              
                         <li>
                         	<a href="/ava/admin/usuarios/usuarios.php"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;USUÁRIOS</a>
                         </li>
-                     	<!--<li>
-                        	<a href="/ava/admin/cadastros/cadastros.php"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;CADASTROS</a>
-                        </li>-->                  
-                       <!-- <li>
-                        	<a href="/ava/admin/relatorios.php">
-                            	<i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;RELATÓRIOS
-                            </a>
-						</li>-->
                   	</ul>
                     <ul class="nav navbar-nav navbar-right">
                     	<li>
@@ -60,4 +50,24 @@
 			</div><!-- /.container-fluid -->
 		</nav>
       
+      
+      <nav class="navbar navbar-default navbar-fixed-top visible-xs">
+			<div class="container-fluid">
+            	<div class="navbar-header">
+                
+                	<ul class="nav navbar-nav" style="font-size: 18px;">
+        				<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">&nbsp;<i class="fa fa-bars" aria-hidden="true"></i>&nbsp;MENU&nbsp;<span class="caret"></span></a>
+          						<ul class="dropdown-menu">
+                                    <li><a href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;ÁREA DO ADMINISTRADOR</a></li>
+                                    <li><a href="/ava/admin/cursos/cursos.php"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;CURSOS</a></li>
+                                    <li><a href="/ava/admin/usuarios/usuarios.php"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;USUÁRIOS</a></li>
+                                    <li><a href="/ava/acesso_restrito/sair.php"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;SAIR</a></li>
+          						</ul>
+        					</li>
+      					</ul>
+            	</div>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
 

@@ -3,8 +3,18 @@ require_once("../../acesso_restrito/authSession.php");
 require_once("../../conf/confBD.php");
 include_once("../../includes/cabecalho_aluno.php");
 
-$curso = $_GET['curso'];
-$inscricao = $_GET['inscricao'];
+
+$curso = '';
+
+if(!empty($_GET['curso'])){
+	$curso = $_GET['curso'];
+}
+
+$inscricao = '';
+
+if(!empty($_GET['inscricao'])){
+	$inscricao = $_GET['inscricao'];
+}
 
 
 
@@ -56,13 +66,15 @@ if(!empty($curso)){
 }
 ?>
 <div id="tudo">
-	<div class="container">
-    	<ol class="breadcrumb fundo">
+	<div class="fundoTopo2">
+    	<ol class="breadcrumb">
         	<h1 class="tituloBreadcrumb">Acessar Conteúdo</h1>
              <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
             <li><a href="/ava/usuario/cursos/cursos.php">Cursos</a></li>
             <li class="active">Acessar Conteúdo</li>
 		</ol>
+    </div>
+    <div class="container">
         <div class="row">
   			<div class="col-md-12">
             	<h2 class="subTitulo">Curso: <span class="subTituloN2"><?=$curso.' - '.$titulo;?></span></h2>

@@ -3,7 +3,12 @@ require_once("../../acesso_restrito/authSession.php");
 require_once("../../conf/confBD.php");
 include_once("../../includes/cabecalho_admin.php");
 
-$usuario = $_GET['usuario'];
+$usuario = '';
+
+if(!empty($_GET['usuario'])){
+	$usuario = $_GET['usuario'];
+}
+
 $nome = '';
 $email = '';
 $departamento = '';
@@ -68,12 +73,10 @@ if(!empty($usuario)){
 }
 ?>
 <div id="tudo">
-	<div class="container">
-        <ol class="breadcrumb fundo" >
+	<div class="fundoTopo2">
+        <ol class="breadcrumb">
             <h1 class="tituloBreadcrumb">Cadastrar Usuários</h1>
-             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
-              <li><a  href="/ava/admin/usuarios/usuarios.php">Usuários</a></li>
-             <li class="active">Cadastrar Usuários</li>
+             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li><li><a  href="/ava/admin/usuarios/usuarios.php">Usuários</a></li><li class="active">Cadastrar Usuários</li>
         </ol>
     </div>
     <div class="container" >

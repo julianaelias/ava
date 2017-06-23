@@ -4,15 +4,13 @@ require_once("conf/confBD.php");
 include_once("includes/cabecalho.php");
 ?>
 <div id="tudo">
-	<div class="container">
-    	<form class="form-signin" role="form" method="post" action="acesso_restrito/verificar_login.php">
-    	 <!--<div class="fundoTitulo">
-        	<h1 class="tituloBreadcrumb ">Bem Vindo ao AVA</h1>
-         </div> -->
-         <ol class="breadcrumb fundo">
+	<div class="fundoTopoIndex">
+         <ol class="breadcrumb">
         	<h1 class="tituloBreadcrumb">Bem Vindo ao AVA</h1>
-		</ol>  
+		</ol>
+     </div>
         <div class="container caixa">
+        <form class="form-signin" role="form" method="post" action="acesso_restrito/verificar_login.php">
             <div class="panel panel-primary">
             	<div class="panel-heading">Faça seu login para acessar o AVA</div>
                 <div class="panel-body">
@@ -49,7 +47,6 @@ include_once("includes/cabecalho.php");
 			
             </form>
 		</div>
-	</div><!-- /.container -->
 <div id="clear"></div>
 <?php
 include_once("includes/rodape.php");?>

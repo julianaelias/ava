@@ -61,13 +61,42 @@
 	.fundo{
 		text-align:center;  
 		/*margin: 0 -150%;*/
-		margin: 0 -9%;
+		/*margin: 0 -9%;*/
 		/*padding: 20px 150%;*/
 		padding: 20px;
 		text-align: center;
 		margin-bottom:10px;
 		background-color:#F5F5F5;
 	}
+	.fundoTopoIndex{
+		position: relative; 
+		width: 100%; 
+		top: 0; 
+		text-align:center; 
+		padding: 20px 0px 5px 0px; 
+		background-color:#F5F5F5;
+		text-align:center; 
+	}
+	
+	.fundoTopo{
+		position: relative; 
+		width: 100%; 
+		top: 0; 
+		padding: 20px 0px 20px 0px; 
+		background-color:#F5F5F5;
+		text-align:center; 
+	}
+	
+	.fundoTopo2{
+		position: relative; 
+		width: 100%; 
+		top: 0; 
+		background-color:#F5F5F5;
+		text-align:center; 
+		padding: 8px 0px 1px 0px;
+		margin-bottom: 10px;
+	}
+	
 	.fundoTitulo{
 		text-align:center; 
 		margin: 0 -150%;

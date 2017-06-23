@@ -5,8 +5,8 @@ include_once("../../includes/cabecalho_aluno.php");
 
 ?>
 <div id="tudo">
-	<div class="container">
-    	<ol class="breadcrumb fundo">
+	<div class="fundoTopo2">
+    	<ol class="breadcrumb">
         	<h1 class="tituloBreadcrumb">Inscrições</h1>
              <li><a  href="/ava/usuario/area_aluno.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
              <li class="active">Inscrever</li>

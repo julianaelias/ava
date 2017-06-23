@@ -3,7 +3,11 @@ require_once("../../acesso_restrito/authSession.php");
 require_once("../../conf/confBD.php");
 include_once("../../includes/cabecalho_admin.php");
 
-$curso = $_GET['curso'];
+$curso = '';
+
+if(!empty($_GET['curso'])){
+	$curso = $_GET['curso'];
+}
 $titulo = '';
 $descricao = '';
 $categoria = '';
@@ -78,13 +82,15 @@ if(!empty($curso)){
 	}
 ?>
 <div id="tudo">
-	<div class="container">
-        <ol class="breadcrumb fundo">
+	<div class="fundoTopo2">
+        <ol class="breadcrumb">
         	<h1 class="tituloBreadcrumb">Gerir Conteúdo</h1>
             <li><a  href="/ava/admin/area_admin.php"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;AVA</a></li>
             <li><a href="/ava/admin/cursos/cursos.php">Cursos</a></li>
             <li class="active">Gerir Conteúdo</li>
 		</ol>
+    </div>
+    <div class="container">
          <div class="row">
   			<div class="col-md-12">
             	<h2 class="subTitulo">Gerir Curso: <span class="subTituloN2"><?=$curso.' - '.$titulo;?></span></h2>
