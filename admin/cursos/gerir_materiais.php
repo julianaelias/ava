@@ -375,7 +375,9 @@ if(!empty($curso) && !empty($unidade) && !empty($material)){
 											<td style="width:40%;">
 											<?php 
                                                 if($tipoM == 2){//Video
-												echo'<a href="'.$linkM.'" target="_blank" title="Clique para visualizar o vídeo."><i class="fa fa-youtube" aria-hidden="true"></i> '.$tituloM.'</a>';
+												/*echo'<a href="'.$linkM.'" target="_blank" title="Clique para visualizar o vídeo."><i class="fa fa-youtube" aria-hidden="true"></i> '.$tituloM.'</a>';*/
+												
+												echo'<a href="videos.php?url='.$linkM.'&curso='.$cursoMA.'" target="_blank" title="Clique para visualizar o vídeo."><i class="fa fa-youtube-play" aria-hidden="true"></i> '.$tituloM.'</a>';
                                                 }else if($tipoM == 1 || $tipoM == 3){//Arquivo
 												echo'<a href="downloadMaterial.php?material='.$materialM.'&unidade='.$unidadeM.'" target="_blank" title="Clique para fazer download do arquivo."><i class="fa fa-download" aria-hidden="true"></i> '.$tituloM.'</a>';
 									
